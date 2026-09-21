@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>EagleNet Matrix Monitor</title>
-    <!-- Pull the engine from your real public gateway link -->
-    <script type="text/javascript" src="https://monitor.eaglenet.asia/dashboard.js"></script>
-    <style>
-        body { background-color: #111116; color: #eee; font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 25px; }
-        h1 { margin-bottom: 5px; color: #fff; font-weight: 600; }
-        .grid-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 25px; }
+    <title>EagleNet Matrix Monitor</title>    <script type="text/javascript" src="https://monitor.eaglenet.asia/dashboard.js"></scri
+pt>
+    <style>        body { background-color: #111116; color: #eee; font-family: -apple-system, BlinkMa
+cSystemFont, sans-serif; padding: 25px; }
+        h1 { margin-bottom: 5px; color: #fff; font-weight: 600; }        .grid-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px;
+ margin-top: 25px; }
         .server-card { background: #1e1e24; padding: 20px; border-radius: 10px; border: 1px solid #2d2d35; }
         .server-card h3 { margin-top: 0; color: #00adef; border-bottom: 2px solid #2d2d35; padding-bottom: 8px; }
     </style>
@@ -16,12 +15,13 @@
 <body>
 
     <h1>EagleNet Systems Matrix</h1>
+    <p><a href="https://monitor.eaglenet.asia/#menu_system_submenu_compute;ac=pan" style="color: #00adef; text-decoration: none; font-weight: bold;">âž¡ï Go to Full Native NetdataDashboard</a></p>
 
     <div class="grid-container">
 
         <!-- SERVER 1 (HOME NODE) -->
         <div class="server-card">
-            <h3>Server 1 (Home Master)</h3>
+            <h3>Server 4 (Home Master)</h3>
             <div data-netdata="system.cpu" data-host="https://monitor.eaglenet.asia" data-chart-library="dygraph" data-height="220px"></div>
         </div>
 
@@ -37,10 +37,10 @@
             <div data-netdata="system.cpu" data-host="http://130.210.17.180:19999" data-chart-library="dygraph" data-height="220px"></div>
         </div>
 
-        <!-- SERVER 4 (BACKUP NODE) -->
+        <!-- SERVER 2 (BACKUP NODE) -->
         <div class="server-card">
-            <h3>Server 4 (Backup Node)</h3>
-            <div data-netdata="system.cpu" data-host="http://192.168.8.104:19999" data-chart-library="dygraph" data-height="220px"></div>
+            <h3>Server 2 (Backup Node)</h3>
+            <div data-netdata="system.cpu" data-host="http://80.225.208.218:19999" data-chart-library="dygraph" data-height="220px"></div>
         </div>
 
     </div>
