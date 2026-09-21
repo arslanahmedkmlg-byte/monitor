@@ -3,45 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>EagleNet Matrix Monitor</title>
-    <!-- Bootstrap Netdata's dashboard asset framework from your local master engine -->
-    <script type="text/javascript" src="/dashboard.js"></script>
+    <!-- Bootstraps the chart engine directly from your primary public gateway link -->
+    <script type="text/javascript" src="https://eaglenet.asia"></script>
     <style>
-        body { background-color: #111116; color: #eee; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 25px; }
+        body { background-color: #111116; color: #eee; font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 25px; }
         h1 { margin-bottom: 5px; color: #fff; font-weight: 600; }
-        .native-link { color: #00adef; text-decoration: none; font-weight: bold; font-size: 1.1em; }
-        .native-link:hover { text-decoration: underline; }
         .grid-container { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; margin-top: 25px; }
-        .server-card { background: #1e1e24; padding: 20px; border-radius: 10px; border: 1px solid #2d2d35; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
-        .server-card h3 { margin-top: 0; border-bottom: 2px solid #2d2d35; padding-bottom: 8px; color: #00adef; }
+        .server-card { background: #1e1e24; padding: 20px; border-radius: 10px; border: 1px solid #2d2d35; }
+        .server-card h3 { margin-top: 0; color: #00adef; border-bottom: 2px solid #2d2d35; padding-bottom: 8px; }
     </style>
 </head>
 <body>
 
     <h1>🦅 EagleNet Systems Matrix</h1>
-    <!-- Quick portal jump to access deep metrics and your Option 1 sidebar menu -->
-    <p><a href="/netdata/" class="native-link">➡️ Open Full Native Node Dashboard</a></p>
+    <p><a href="https://eaglenet.asia" style="color: #00adef; text-decoration: none; font-weight: bold;">➡️ Go to Full Native Netdata Dashboard</a></p>
 
     <div class="grid-container">
         
-        <!-- SERVER 1 (LOCAL PLATFORM / MASTER GATEWAY) -->
+        <!-- SERVER 1 (HOME NODE) -->
         <div class="server-card">
-            <h3>Server 1 (Home Node)</h3>
-            <div data-netdata="system.cpu" data-host="/netdata/" data-chart-library="dygraph" data-height="220px"></div>
+            <h3>Server 1 (Home Master)</h3>
+            <div data-netdata="system.cpu" data-host="https://eaglenet.asia" data-chart-library="dygraph" data-height="220px"></div>
         </div>
 
-        <!-- SERVER 2 (LOCAL NETWORK NODE) -->
+        <!-- SERVER 2 (LAN NODE) -->
         <div class="server-card">
             <h3>Server 2 (LAN Node)</h3>
             <div data-netdata="system.cpu" data-host="http://192.168.8.102:19999" data-chart-library="dygraph" data-height="220px"></div>
         </div>
 
-        <!-- SERVER 3 (REMOTE CLOUD INSTANCE) -->
+        <!-- SERVER 3 (REMOTE CLOUD) -->
         <div class="server-card">
             <h3>Server 3 (Remote Cloud)</h3>
             <div data-netdata="system.cpu" data-host="http://130.210.17.180:19999" data-chart-library="dygraph" data-height="220px"></div>
         </div>
 
-        <!-- SERVER 4 (ALTERNATIVE NODE - NOW BACK ON NATIVE PORT) -->
+        <!-- SERVER 4 (BACKUP NODE) -->
         <div class="server-card">
             <h3>Server 4 (Backup Node)</h3>
             <div data-netdata="system.cpu" data-host="http://192.168.8.104:19999" data-chart-library="dygraph" data-height="220px"></div>
